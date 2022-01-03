@@ -1,0 +1,41 @@
+
+  {% extends 'base.html' %}
+
+  {% block content %}
+  <h1 style="font-size: 28px;">Hello World, {{name}}</h1>
+   
+ 
+    <form action="add" method="post">
+
+        <!-- Cross site request forgery token for security -->
+        {% csrf_token %}
+        <label>
+            First Number
+            <input type="text" name="num1"/>
+        </label>
+        <br/>
+        <label>
+            Second Number
+            <input type="text" name="num2" />
+        </label>
+        <br/>
+       <!-- <input type="submit" name="Calculate"/> -->
+      <input type="submit">
+    </form>
+<!-- For instance you are retrieving data from a database
+We need to get all the data
+To do so we include a for loop
+Syntax
+    {% for dest in dests %} -->
+
+    <!-- The special offer boolean we need to include
+    An if else statement so that when it is true to print special
+     offer when it it is false not to print special offer -->
+
+     <!-- Syntax
+     {% if dest.offer %}
+     <div class="spec_offer"><a href="#">Special Offer</a></div>
+     {% endif %} -->
+
+
+{% endblock %}
