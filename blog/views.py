@@ -17,4 +17,4 @@ from django.http import HttpResponse
     #That's it!!!!
 
 def home(request):
-    return render(request,'chat/index.html')
+    return render(request,'index.html')
