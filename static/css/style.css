@@ -25,7 +25,7 @@ nav {
 }
 .nav-links li {
   padding-left: 2rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #fff;
 }
 #logo {
@@ -46,18 +46,18 @@ nav {
   position: absolute;
   top: 50%;
   left: 5%;  
-  font-size: 24px;
-  /* font-family: "Lobster", cursive; */
+  font-size: 1.8 rem;
+  /* font-family: 'Times New Roman', Times, serif; */
   color: #fff;
   width: 30%;
   /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   
 }
 
 .btn-signin{
   position: absolute;
-  top: 71%;
+  top: 65%;
   left: 5%;
   background-color: #d1410c;
   color: #fff;

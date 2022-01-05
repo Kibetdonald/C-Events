@@ -25,34 +25,56 @@ nav {
 }
 .nav-links li {
   padding-left: 2rem;
-  font-size: 1.2rem;
+  font-size: 0.8rem;
   color: #fff;
 }
 #logo {
   font-family: "Lobster", cursive;
   font-weight: lighter;
   font-size: 2rem;
+  color: #d1410c;
+}
+.big-text{
+  position: absolute;
+  left: 5%;
+  font-size: 3rem;
+  color: #fff;
+  top: 40%;
 }
 
-.big-text {
+.section_one{
   position: absolute;
-  top: 40%;
-  left: 70%;
-  transform: translate(-50%, -30%);
-  font-size: 5rem;
-  font-family: "Lobster", cursive;
-  color: #fff;
-}
-.welcome{
-  position: absolute;
-  top: 40%;
-  left: 10%;  
-  font-size: 3rem;
+  top: 50%;
+  left: 5%;  
+  font-size: 22px;
   /* font-family: "Lobster", cursive; */
   color: #fff;
-  width: 50%;
-  /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  width: 30%;
+  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
+  
+}
+
+.btn-signin{
+  position: absolute;
+  top: 71%;
+  left: 5%;
+  background-color: #d1410c;
+  color: #fff;
+  border: 0px;
+  border-radius: 4px;
+  width: 100px;
+  height: 30px;
+  font-size: 15px;
+  cursor: pointer;
+}
+.section_two{
+  position: absolute;
+  top: 40%;
+  left: 75%;
+  transform: translate(-50%, -30%);
+  width: 30%;
+
 }
 .intro {
   background: black;
@@ -78,7 +100,7 @@ nav {
 .intro-text {
   color: rgb(233, 233, 233);
   font-family: "Heebo", sans-serif;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .hide {
