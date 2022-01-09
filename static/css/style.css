@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: #202b36;
 }
 main {
   font-family: "Heebo", sans-serif;
@@ -9,7 +10,7 @@ main {
 
 .landing {
   min-height: 100vh;
-  background: url("./hero.jpg");
+  /* background: url("./hero.jpg"); */
   background-size: cover;
   padding: 0rem 5rem;
 }
@@ -33,19 +34,20 @@ nav {
   font-weight: lighter;
   font-size: 2rem;
   color: #d1410c;
+  margin-left: 6%;
 }
 .big-text{
   position: absolute;
-  left: 5%;
+  left: 10%;
   font-size: 3rem;
   color: #fff;
-  top: 40%;
+  top: 30%;
 }
 
 .section_one{
   position: absolute;
-  top: 50%;
-  left: 5%;  
+  top: 40%;
+  left: 10%;  
   font-size: 1.8 rem;
   /* font-family: 'Times New Roman', Times, serif; */
   color: #fff;
@@ -57,27 +59,35 @@ nav {
 
 .btn-signin{
   position: absolute;
-  top: 65%;
-  left: 5%;
+  top: 58%;
+  left: 10%;
   background-color: #d1410c;
   color: #fff;
   border: 0px;
   border-radius: 4px;
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 40px;
   font-size: 15px;
   cursor: pointer;
 }
+.fa-arrow-right{
+  background-color: #d1410c;
+  font-size: 20px;
+}
+.fa-check{
+  color: #d1410c;
+  height: 10%;
+}
 .section_two{
   position: absolute;
-  top: 40%;
+  top: 35%;
   left: 75%;
   transform: translate(-50%, -30%);
-  width: 30%;
+  width: 40%;
 
 }
 .intro {
-  background: black;
+  background: #202b36;
   position: fixed;
   top: 0;
   left: 0;
@@ -104,11 +114,60 @@ nav {
 }
 
 .hide {
-  background: black;
+  background: #202b36;
   overflow: hidden;
 }
 
 .hide span {
   transform: translateY(100%);
   display: inline-block;
+}
+
+/* CSS FOR PLATFORM STARTS HERE */
+.platform{
+  top: 5%;
+  width: 80%;
+  align-content: center;
+  text-align: center;
+  margin: auto;
+}
+.platform-title{
+  margin-top: 2%;
+  margin-bottom: 3%;
+  text-align: center;
+  font: 300;
+  font-size: 3rem;
+  color: rgb(233, 233, 233);
+  
+}
+.card-title{
+  color: rgb(233, 233, 233);
+}
+.card-text{
+  color: rgb(233, 233, 233);
+  font-size: 14px;
+  font-family: "Heebo", sans-serif;
+
+}
+.whitespace{
+  height: 15%;
+  margin-top: 8%;
+}
+/* features starts here */
+.features{
+  top: 5%;
+  width: 80%;
+  color: #fff;
+  margin: auto;
+}
+.feature-title{
+  margin-top: 5%;
+  font-size: 2rem;
+}
+.feature-image{
+  width: 70%;
+  
+}
+.feature-text{
+  font-size:1.2 rem;
 }

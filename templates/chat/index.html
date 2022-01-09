@@ -1,34 +1,38 @@
 {% load static %}
 <!-- background-image: url('{% static "images/hero.jpg" %}'); -->
 
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
-    
+    <link
+      rel="stylesheet"
+      href="{% static 'css/bootstrap/bootstrap.min.css' %}"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100&family=Montserrat:wght@100&family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    {% comment %} font awesome {% endcomment %}
+    <link
+      rel="stylesheet"
+      href="{%static 'fontawesome/css/fontawesome.css'%}"
+    />
+    <link rel="stylesheet" href="{%static 'fontawesome/css/all.css'%}" />
 
     <title>Event-Yetu</title>
-    <style>
-        .landing {
-            background-color: #111217;
-        }
-    </style>
   </head>
   <body>
- 
     <main>
-      <section class="landing" >
-          
+      <section class="landing">
         <nav>
           <h1 id="logo">Event-Yetu</h1>
           <ul class="nav-links">
@@ -39,32 +43,174 @@
             <li>Resources</li>
             <li>Company</li>
             &nbsp;&nbsp;
-        
+
             <li>Your Account</li>
           </ul>
-        </nav>     
-        
-          <h2 class="big-text">
-              Flawless Event Management
-          </h2>
-        
-       
-        <p class="section_one">
-          With Event-Yetu, you can create virtual, 
-          hybrid, and in-person event experiences 
-          for your audience, regardless of where they are.
-            
-        </p>
-       
-        <button type="submit" class="btn-signin">Sign Up</button>
-        <img class="section_two" src="{% static 'images/visualize.png'%}"/>
+        </nav>
 
+        <div class="row">
+          <div class="col">
+            <h2 class="big-text">You Ultimate Guide</h2>
+
+            <p class="section_one">
+              With Event-Yetu, you can create virtual, hybrid, and in-person
+              event experiences for your audience, regardless of where they are.
+              An all-in-one event management platform that makes planning,
+              producing, and reliving event experiences easier than ever.
+            </p>
+
+            <button type="submit" class="btn-signin">
+              Sign Up <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="col">
+            <img class="section_two" src="{% static 'images/engaged.png'%}" />
+          </div>
+        </div>
       </section>
+      {% comment %} Section two of what our platform provides {% endcomment %}
+      <div class="platform">
+        <h1 class="platform-title">What Event-Yetu provides</h1>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              {% comment %} cards {% endcomment %}
+              <div class="card" style="width: 18rem">
+                <img
+                  src="{%static 'images/2.png'%}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Virtual Events</h5>
+                  <p class="card-text">
+                    Event management platforms incorporate many tools to
+                    streamline the event planning process, offering features
+                    that address multiple aspects of event management
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore Virtual</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              {% comment %} cards {% endcomment %}
+              <div class="card" style="width: 18rem">
+                <img
+                  src="{%static 'images/1.png'%}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">In-Person Events</h5>
+                  <p class="card-text">
+                    Event management platforms incorporate many tools to
+                    streamline the event planning process, offering features
+                    that address multiple aspects of event management
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore In-Person</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              {% comment %} cards {% endcomment %}
+              <div class="card" style="width: 18rem">
+                <img
+                  src="{%static 'images/3.png'%}"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">Hybrid Events</h5>
+                  <p class="card-text">
+                    Event management platforms incorporate many tools to
+                    streamline the event planning process, offering features
+                    that address multiple aspects of event management
+                  </p>
+                  <a href="#" class="btn btn-primary">Explore Hybrid</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="whitespace"></div>
+      {% comment %} Platform container ends here {% endcomment %} {% comment %}
+      Event-Yetu Features {% endcomment %}
+      <div class="features">
+        <div class="row">
+          <div class="col">
+            <h2 class="feature-title">Keep your audience engaged</h2>
+            <p class="feature-text">
+              <i class="fas fa-check"></i>Create beautiful event landing pages
+              easily, at lightning speed with Hopin Canvas.
+              <br />
+              <i class="fas fa-check"></i>Resend tickets, enable group
+              purchases, create promo codes, issue refunds, manage waitlists,
+              and change ticket information straight from your Hopin dashboard.
+              <br />
+              <i class="fas fa-check"></i>Push your event registration data to
+              your CRM or Marketing Automation tool to create targeted marketing
+              campaigns and personalized follow up communications.
+            </p>
+          </div>
+          <div class="col">
+            <img class="feature-image" src="{% static 'images/future.png'%}" />
+          </div>
+        </div>
+      </div>
+      <div class="whitespace"></div>
+      <div class="features">
+        <div class="row">
+          <div class="col">
+            <img class="feature-image" src="{% static 'images/future.png'%}" />
+          </div>
+          <div class="col">
+            <h2 class="feature-title">Keep your audience engaged</h2>
+            <p class="feature-text">
+              <i class="fas fa-check"></i>Create beautiful event landing pages
+              easily, at lightning speed with Hopin Canvas.
+              <br />
+              <i class="fas fa-check"></i>Resend tickets, enable group
+              purchases, create promo codes, issue refunds, manage waitlists,
+              and change ticket information straight from your Hopin dashboard.
+              <br />
+              <i class="fas fa-check"></i>Push your event registration data to
+              your CRM or Marketing Automation tool to create targeted marketing
+              campaigns and personalized follow up communications.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="whitespace"></div>
+      <div class="features">
+        <div class="row">
+          <div class="col">
+            <h2 class="feature-title">Keep your audience engaged</h2>
+            <p class="feature-text">
+              <i class="fas fa-check"></i>Create beautiful event landing pages
+              easily, at lightning speed with Hopin Canvas.
+              <br />
+              <i class="fas fa-check"></i>Resend tickets, enable group
+              purchases, create promo codes, issue refunds, manage waitlists,
+              and change ticket information straight from your Hopin dashboard.
+              <br />
+              <i class="fas fa-check"></i>Push your event registration data to
+              your CRM or Marketing Automation tool to create targeted marketing
+              campaigns and personalized follow up communications.
+            </p>
+          </div>
+          <div class="col">
+            <img class="feature-image" src="{% static 'images/future.png'%}" />
+          </div>
+        </div>
+      </div>
     </main>
+
+    {% comment %} Into div starts {% endcomment %}
     <div class="intro">
       <div class="intro-text">
         <h1 class="hide">
-           
           <span class="text">Create immersive </span>
         </h1>
         <h1 class="hide">
@@ -76,12 +222,11 @@
       </div>
     </div>
     <div class="slider"></div>
-    
-    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
-    <script  src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-   
-    <script src="{% static 'js/app.js'%}"></script>
-  
+    {% comment %} Into div ends here {% endcomment %}
 
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+
+    <script src="{% static 'js/app.js'%}"></script>
   </body>
 </html>

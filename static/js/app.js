@@ -7,9 +7,20 @@ tl.fromTo("nav", { opacity: 0 }, { opacity: 1, duration: 1 });
 // tl.fromTo(".section_two", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 // t1.from('section_two ', {duration: 1, y:30, opacity: 0, delay: 1.4});
 
+tl.from(".section_two", {opacity: 0, duration: 1, x: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
 tl.from(".big-text", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
 tl.from(".section_one", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
 tl.from(".btn-signin", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
+
+tl.from(".platform-title", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".card", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
+
+tl.from(".feature-title", {opacity: 0, duration: 1, x: "-100%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-image", {opacity: 0, duration: 1, x: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-text", {opacity: 0, duration: 1, x: "-100%", stagger:0.6, ease: 'Power2.easeInOut'});
+
+
+
 // tl.fromTo(".section_one", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
 // t1.from('button', {opacity: 0, duration: 1, y: -50, delay: 0.6, ease: 'Power2.easeInOut'});
 // t1.from('p', {opacity: 0, duration: 1, y: -50, delay: 1.8, ease: 'Power2.easeInOut'});
