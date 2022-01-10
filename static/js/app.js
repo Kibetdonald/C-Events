@@ -15,10 +15,24 @@ tl.from(".btn-signin", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: '
 tl.from(".platform-title", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
 tl.from(".card", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
 
-tl.from(".feature-title", {opacity: 0, duration: 1, x: "-100%", stagger:0.6, ease: 'Power2.easeInOut'});
-tl.from(".feature-image", {opacity: 0, duration: 1, x: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
-tl.from(".feature-text", {opacity: 0, duration: 1, x: "-100%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-title_1", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-image_1", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-text_1", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".btn-explore_1", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
 
+tl.from(".feature-title_2", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-image_2", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-text_2", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".btn-explore_2", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+
+tl.from(".feature-title_3", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-image_3", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".feature-text_3", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+tl.from(".btn-explore_3", {opacity: 0, duration: 1, y: "50%", stagger:0.6, ease: 'Power2.easeInOut'});
+
+tl.from(".contact-form", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
+
+tl.from(".footer", {opacity: 0, duration: 1, y: "100%", stagger:0.6, ease: 'Power2.easeInOut'});
 
 
 // tl.fromTo(".section_one", { opacity: 0 }, { opacity: 1, duration: 1 }, "-=1");
