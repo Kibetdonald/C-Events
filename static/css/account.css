@@ -1,0 +1,17 @@
+body{
+  margin: 0;
+  padding: 0;
+
+}
+.login-form{
+  width: 50%;
+  margin: auto;
+  top: 40%;
+}
+.Login-title{
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 400;
+  /* letter-spacing: 1rem; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+}
